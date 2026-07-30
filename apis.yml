@@ -1,8 +1,23 @@
 aid: merama
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/merama.png
 name: merama
-description: merama is a company surfaced as a portfolio company of balderton-capital, partech and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Merama is a Latin American e-commerce company that invests in and scales established online
+  brands selling on marketplaces such as Amazon and MercadoLibre. It acquires a substantial stake while
+  founders retain operational control, then provides working capital, business intelligence, digital
+  marketing, cross-border expansion across Latin America and the US, and proprietary operating technology
+  to accelerate growth. Merama operates as a brand aggregator / roll-up rather than a developer platform
+  and publishes no public API, developer portal, or SDK surface.
 url: https://raw.githubusercontent.com/api-evangelist/merama/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- E-Commerce
+- Latin America
+- Brand Aggregator
+- Marketplace
+- Retail
+- Investment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/merama-domain-security.yml
 - type: Website
   url: https://www.merama.io/
+- type: PrivacyPolicy
+  url: https://www.merama.io/privacy-policy/
+- type: Blog
+  url: https://www.merama.io/news/
+- type: Support
+  url: https://www.merama.io/contact-us/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
